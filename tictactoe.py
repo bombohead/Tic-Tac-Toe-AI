@@ -148,60 +148,6 @@ def utility(board):
 
     return 0
 
-
-"""def minimax(board):
-    
-    Returns the optimal action for the current player on the board.
-
-    X max player
-    O min player
-    
-        
-
-    if (terminal(board)):
-        return None
-
-    current = player(board)
-
-    if (current == X):                
-        value, move = max_value(board)
-        return move
-    else:
-        value, move = min_value(board)
-        return move
-
-def max_value(board):
-    if (terminal(board) == True):
-        return utility(board), None
-
-    v = -math.inf
-    optimal = None
-
-    for action in actions(board):
-        value, temp = min_value(result(board, action))
-
-        if (value > v):
-            v = value
-            optimal = action
-
-    return v, optimal
-
-def min_value(board):
-    if (terminal(board) == True):
-        return utility(board), None
-
-    v = math.inf
-    optimal = None
-
-    for action in actions(board):
-        value, temp = max_value(result(board, action))
-
-        if (value < v):
-            v = value
-            optimal = action
-
-    return v, optimal"""
-
 def minimax(board):
     
     """Returns the optimal action for the current player on the board.
@@ -272,31 +218,3 @@ def min_value(board):
 
     #Otherwise result is returned after iteration has concluded  
     return [v, optimal]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
